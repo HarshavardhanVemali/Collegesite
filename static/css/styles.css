@@ -152,7 +152,9 @@
         transition: .5s;
         
     }
-
+    .navbar-toggler{
+        margin-bottom: 10px;
+    }
     .navbar .nav-item:hover .dropdown-menu {
         transform: rotateX(0deg);
         visibility: visible;
@@ -160,7 +162,9 @@
         opacity: 1;
     }
 }
-
+.navbar-toggler{
+    margin-bottom: 10px;
+}
 
 /*** Header ***/
 @media (min-width: 992px) {
@@ -556,4 +560,39 @@ ul.links li {
     background:#f5f5f5;
     padding: 10px;
     border-radius: 10px;
+    text-align: center;
+  }
+  @media only screen and (max-width: 375px) {
+    #map iframe{
+        width: 300px;
+        height: 300px;
+      }
+      #map{
+        gap: 5px;
+        margin: 5px;
+        margin-left: 5px;
+        background:#f5f5f5;
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      } 
+  }
+  @media only screen and (min-width: 376px) and (max-width: 650px) {
+    #map iframe{
+        width: 300px;
+        height: 300px;
+      }
+      #map{
+        gap: 5px;
+        margin: 5px;
+        margin-left: 5px;
+        background:#f5f5f5;
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      } 
   }

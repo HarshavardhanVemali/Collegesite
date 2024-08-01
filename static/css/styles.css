@@ -447,7 +447,8 @@ ul.links li {
   background: url(../img/li_arrow.png) no-repeat left top;
 }
 .keytonespeakers {
-    margin-left: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
 
 }
 

@@ -446,3 +446,113 @@ ul.links li {
   margin-left: -40px;
   background: url(../img/li_arrow.png) no-repeat left top;
 }
+.keytonespeakers {
+    margin-left: 50px;
+
+}
+
+.headings {
+    margin-top: 20px;
+    text-align: center;
+    color: red;
+    font-size: 1.5em !important;
+}
+
+.keytonespeakersdetails {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.speaker {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.speaker img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.speaker h3{
+    font-size: 1.2em;
+}
+.registration {
+    padding: 20px;
+}
+
+.headings {
+    text-align: center;
+    color: red;
+    font-size: 2em !important;
+    margin-bottom: 20px;
+}
+
+.registration_details table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.registration_details th,
+.registration_details td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.registration_details th {
+    background-color: #e6ffe6;
+    font-weight: bold;
+}
+
+.registration_details tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.registration_details tr:hover {
+    background-color: #f5f5f5;
+}
+.registration_form {
+    text-align: center; 
+    margin-top: 20px; 
+  }
+  
+  .registration_form .btn {
+    background-color: #007bff; 
+    color: white;
+    padding: 5px 10px; 
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-decoration: none; 
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+    margin-bottom: 10px;
+  }
+  
+  .registration_form .btn:hover {
+    background-color: #0056b3; 
+    transform: translateY(-3px); 
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3); 
+  }
+  #map iframe{
+    width: 600px;
+    height: 400px;
+  }
+  #map{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 50px;
+    margin-left: 50px;
+    background: #ddd;
+    padding: 10px;
+    border-radius: 10px;
+  }

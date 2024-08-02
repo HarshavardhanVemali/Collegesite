@@ -6,6 +6,15 @@ def index(request):
 def testpage(request):
     return render(request,'testpage.html')
 
+def aboutcollege(request):
+    return render(request,'aboutcollege.html')
+
+def aboutconference(request):
+    return render(request,'aboutconference.html')
+
+def aboutset(request):
+    return render(request,'aboutset.html')
+
 def keytonespeakers(request):
     return render(request,'keytonespeakers.html')
 

@@ -104,7 +104,7 @@ html {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    margin-right: 30px;
+    margin-right: 20px;
     padding: 15px 0;
     color: #FFFFFF;
     font-size: 13px;
@@ -678,6 +678,30 @@ ul.links li {
   }
   .publication a{
     text-decoration: underline;
+  }
+  .about-clg,.about-set{
+    text-align: center;
+    margin-top: 70px;
+    background-color:#f9f9f9;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .aboutmvgr{
+    display: flex;
+    justify-content: center;
+  }
+  .aboutmvgr img{
+    text-align: center;
+    flex: 1;
+    align-items: center;
+    max-width: 1000px;
+  }
+  .springerimage{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
   }
   @media only screen and (max-width: 375px) {
     #map iframe{

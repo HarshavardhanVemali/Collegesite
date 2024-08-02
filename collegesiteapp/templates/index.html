@@ -58,7 +58,16 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
+                        
 						<a href="{% url 'index' %}" class="nav-item nav-link active">Home</a>
+                        <div class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="{% url 'aboutcollege' %}" class="dropdown-item">About MVGR</a>
+                                <a href="{% url 'aboutset' %}" class="dropdown-item">About SET</a>
+                                <a href="{% url 'aboutconference' %}" class="dropdown-item">About Conference</a>                                
+                            </div>
+                        </div>
                         <a href="{% url 'callforpapers' %}" class="nav-item nav-link">Call For Papers</a>
                         <a href="{% url 'submitpapers' %}" class="nav-item nav-link">Submit Paper</a>
                         <a href="{% url 'publication' %}" class="nav-item nav-link">Publication</a>
@@ -77,21 +86,23 @@
         <!-- Header Start -->
         <div class="container-fluid header bg-white p-0" style="margin-top:40px">
             <div class="row g-0 align-items-center flex-column-reverse flex-md-row" style="box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important">
-                <div class="col-md-6 p-5 mt-lg-5" style="margin-top: 0rem !important;">
-                    <h1  style="font-size:28px;text-align:center;color:red;"> International Conference on  Innovative Computing Technologies (ICICT-2024) On 13th – 14th December 2024</h1>
-                    
-                    
-                </div>
                 <div class="col-md-6 animated fadeIn">
                     <div class="owl-carousel header-carousel">
                         <div class="owl-carousel-item">
-                            <img class="img-fluid" src="{% static 'images/carousel-3.jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'images/about-mvgr.jpg' %}" alt="">
                         </div>
                         <div class="owl-carousel-item">
                             <img class="img-fluid" src="{% static 'images/carousel-4.jpg' %}" alt="">
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6 p-5 mt-lg-5" style="margin-top: 0rem !important;">
+                   <div class="springerimage">
+                    <img class="img-fluid" src="{% static 'images/springer.jpg' %}" alt="">
+                   </div>
+                    <h1  style="font-size:28px;text-align:center;color:red;"> International Conference on  Innovative Computing Technologies (ICICT-2024) On 13th – 14th December 2024</h1>
+                </div>
+                
             </div>
         </div>
         <!-- Header End -->

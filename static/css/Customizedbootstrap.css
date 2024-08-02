@@ -3984,7 +3984,8 @@ textarea.form-control-lg {
     flex-direction: column;
     padding-left: 0;
     margin-bottom: 0;
-    list-style: none
+    list-style: none;
+    padding-left: 10px;
 }
 
 .navbar-nav .nav-link {

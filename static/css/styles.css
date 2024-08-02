@@ -6,7 +6,9 @@
     --light: #EFFDF5;
     --dark: #0E2E50;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 .back-to-top {
     position: fixed;
     display: none;
@@ -72,7 +74,7 @@
 .nav-bar {
     position: relative;
     margin-top: 45px;
-    padding: 0 3rem;
+    padding: 0 rem;
     transition: .5s;
     z-index: 9999;
 }
@@ -103,13 +105,23 @@
 
 .navbar-light .navbar-nav .nav-link {
     margin-right: 30px;
-    padding: 25px 0;
+    padding: 15px 0;
     color: #FFFFFF;
-    font-size: 15px;
+    font-size: 13px;
     text-transform: uppercase;
     outline: none;
 }
-
+@media only screen and (min-width: 990px) and (max-width: 1399px) {
+    .navbar-light .navbar-nav .nav-link {
+        margin-right: 30px;
+        padding: 10px 0;
+        color: #FFFFFF;
+        font-size: 12px;
+    }
+    .icon p-2 me-2 img{
+        width: 180px;
+    }
+}
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
     color: var(--primary);
@@ -561,6 +573,111 @@ ul.links li {
     padding: 10px;
     border-radius: 10px;
     text-align: center;
+  }
+  #imp-dates img{
+    height: 300px;
+  }
+  #imp-dates .table-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    width: 100%;
+  }
+  
+  #imp-dates table {
+    width: 100%; 
+    max-width: 800px;
+    border-collapse: collapse;
+    margin-top: 20px; 
+    background-color: white; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  }
+  
+  #imp-dates th,
+  #imp-dates td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #imp-dates th {
+    background-color: #e6ffe6;
+    font-weight: bold;
+  }
+  
+  #imp-dates tr:nth-child(even) {
+    background-color: #f9f9f9; 
+  }
+
+  #conf-team .accordion-item {
+    border: none; 
+    margin-bottom: 3px;
+    border-radius: 10px; 
+    overflow: hidden;
+  }
+  
+  #conf-team .accordion-header {
+    background-color:#FFFFFF; 
+    border-bottom: 1px solid #e9ecef; 
+    padding: 0.2rem; 
+  }
+  
+  #conf-team .accordion-button {
+    background-color: transparent;
+    box-shadow: none !important;
+    font-weight: 500; 
+    color: #343a40; 
+  }
+  
+  #conf-team .accordion-button:not(.collapsed) {
+    color: #007bff; 
+  }
+  
+  
+  #conf-team .accordion-button:focus {
+    box-shadow: none; 
+  }
+  
+  #conf-team .accordion-body {
+    padding: 1rem; 
+    background-color: white; 
+  }
+  
+  #conf-team .accordion-body li {
+    list-style-type: disc; 
+    margin-left: 20px; 
+  }
+  #call-for-papers{
+    background-color:#f9f9f9;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .submitpaper{
+    text-align: center;
+    margin-top: 70px;
+    background-color:#f9f9f9;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .submitpaper a{
+    text-decoration: underline;
+  }
+  .publication{
+    text-align: center;
+    margin-top: 70px;
+    background-color:#f9f9f9;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .publication a{
+    text-decoration: underline;
   }
   @media only screen and (max-width: 375px) {
     #map iframe{

@@ -50,7 +50,7 @@
             <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;">
                 <a href="{% url 'index' %}" class="navbar-brand d-flex align-items-center text-center">
                     <div class="icon p-2 me-2">
-                        <img class="img-fluid" src="{% static 'images/logo.png' %}" alt="Icon" style="width: 365px; height: 73px;">
+                        <img class="img-fluid" src="{% static 'images/logo.png' %}" alt="Icon" style="width: 250px; height: 73px;">
                     </div>                    
                 </a>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -58,24 +58,15 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
-						<a href="{% url 'index' %}" class="nav-item nav-link active">Home</a>                       
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Internal Board</a>
-                            <div class="dropdown-menu rounded-0 m-0">
-                                <a href="{% url 'testpage' %}" class="dropdown-item">Patrons</a>
-                                <a href="{% url 'testpage' %}" class="dropdown-item">Internal Advisory Board</a>                                
-                            </div>
-                        </div>                        
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Committees</a>
-                            <div class="dropdown-menu rounded-0 m-0">
-                                <a href="{% url 'testpage' %}" class="dropdown-item">Organising Committee</a>
-                                <a href="{% url 'testpage' %}" class="dropdown-item">International Advisory Commitee</a>                                
-                            </div>
-                        </div>
+						<a href="{% url 'index' %}" class="nav-item nav-link active">Home</a>
+                        <a href="{% url 'callforpapers' %}" class="nav-item nav-link">Call For Papers</a>
+                        <a href="{% url 'submitpapers' %}" class="nav-item nav-link">Submit Paper</a>
+                        <a href="{% url 'publication' %}" class="nav-item nav-link">Publication</a>
+                        <a href="{% url 'registration' %}" class="nav-item nav-link">Registration</a>                        
                         <a href="{% url 'keytonespeakers' %}" class="nav-item nav-link">Key Note Speakers</a>
-                        <a href="{% url 'registration' %}" class="nav-item nav-link">Registration</a>
-                        <a href="{% url 'venue' %}" class="nav-item nav-link">Venue</a>                                                
+                        <a href="{% url 'index' %}#imp-dates" class="nav-item nav-link">Important Dates</a> 
+                        <a href="{% url 'index' %}#conf-team" class="nav-item nav-link">Conference Team</a> 
+                        <a href="{% url 'venue' %}" class="nav-item nav-link">Venue</a>
                     </div>                    
                 </div>                
             </nav>            
@@ -145,8 +136,288 @@
                 </div>
             </div>
         </div>
+        <section id="imp-dates" class="container-fluid  rounded text-dark   bg-color2 " style="margin-bottom: 20px;" >
+            <div class=" text-center border-bottom border-info border-2" style="border-color: red;">
+              <h2 class="text-pink">Important <span >Dates</span></h2>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col d-none d-md-block wow fadeInUp" data-aos="fade-up">
+        
+                    <img src="{%static 'images/calender.avif' %}" alt="imp-dates">
+                </div>
+                <div class="col wow fadeInUp" data-aos="fade-right">
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>S.NO</th>
+                            <th>Description</th>
+                            <th>Dates</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Paper Submission Deadline</td>
+                            <td>15th July 2024</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>Acceptance Notification</td>
+                            <td>4th August 2024</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>Registration Starts</td>
+                            <td>4th August 2024</td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>Camera Ready Paper Submission</td>
+                            <td>5th Aug 2024</td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>Conference Dates</td>
+                            <td>04.10.2024 & 05.10.2024</td>
+                          </tr>
+                        </tbody>
+                    </table>    
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="conf-team" class="container">
+            <div class="text-center border-bottom border-info border-3">
+              <h2 class="text-pink">Conference Team</h2>
+            </div>
+            <div class="container ">
+              <div class="row m-4">
+                <div class="col-md">
+                  <!-- left area -->
+                  <div class="accordion accordion-flush wow fadeInUp " id="left-area" data-aos="flip-right">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-1">
+                            <button class="accordion-button shadow-none collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1" aria-expanded="false" aria-controls="accordion-1">
+                                <h6>
+                                    Chief Patrons
+                                </h6>
+                            </button>
+                        </h2>
+                        <div id="accordion-1" class="accordion-collapse collapse" aria-labelledby="heading-1" data-bs-parent="#left-area">
+                            <div class="accordion-body">
+                                <li>Dr. M. Mohan Babu, Chancellor, MBU</li>
+                                <li>Mr. Vishnu Manchu, Pro-Chancellor, MBU</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-2">
+                            <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2" aria-expanded="false" aria-controls="accordion-2">
+                                <h6>
+                                    Patrons
+                                </h6>
+                            </button>
+                        </h2>
+                        <div id="accordion-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#left-area">
+                            <div class="accordion-body">
+                              <li>Mr. Vinay Maheswari Executive Director,&nbsp;MBU</li>
+                                <li>Dr. Nagaraj Ramrao, Vice-Chancellor, MBU.</li>
+                                <li>Dr. K. Saradhi, Registrar, MBU.</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-3">
+                            <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-3" aria-expanded="false" aria-controls="accordion-3">
+                                <h6>
+                                    Advisors
+                                </h6>
+                            </button>
+                        </h2>
+                        <div id="accordion-3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#left-area">
+                            <div class="accordion-body">
+                              <li>Mr. Vikas Singh Chief Growth and Strategy&nbsp;Officer,&nbsp;MBU</li>
+                                <li>Dr. Avireni Srinivasulu, Dean, Research and Innovation, MBU.</li>
+                                <li> Dr. Eswar Sunkara, Dean (Research &amp; Development)&nbsp;,&nbsp;MBU</li>
+                                <li>Dr. B. M. Satish, Dean, School of Engineering &amp; Technology, MBU.</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion accordion-flush wow fadeInUp" id="right-area" data-aos="flip-right">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-right-4">
+                            <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-right-4" aria-expanded="false" aria-controls="accordion-right-4">
+                                <h6>
+                                    Editorial Board
+                                </h6>
+                            </button>
+                        </h2>
+                        <div id="accordion-right-4" class="accordion-collapse collapse" aria-labelledby="heading-right-4" data-bs-parent="#right-area">
+                            <div class="accordion-body">
+                                <!-- Editorial Board content goes here -->
+                                <li>Dr. K. Reddy Madhavi, Professor, Department of CSE(AI&amp;ML), School of Computing, Mohan Babu University.</li>
+                                <li>Dr. Nagaraj Ramrao, Professor of ECE &amp; Vice-Chancellor, Mohan Babu University</li>
+                                <li>Dr. T. Kishore Kumar	Professor
+                                  Department of Electronics &amp; communication Engineering
+                                  National Institute of Technology, Warangal - 506004, Telangana, INDIA	</li>
+                                <li>Dr.K.Srujan Raju, Professor &amp; Head, Dept. of CSE &amp; IT, CMR Technical Campus, Hyderabad</li>
+                                <li>Dr.Mathini Sellathurai	Dean of Science and Engineering and the head of the Signal Processing for Intelligent Systems and Communications Research Group, Heriot-Watt University, Edinburgh,UK  </li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-right-5">
+                            <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-right-5" aria-expanded="false" aria-controls="accordion-right-5">
+                                <h6>
+                                    Conference Chair
+                                </h6>
+                            </button>
+                        </h2>
+                        <div id="accordion-right-5" class="accordion-collapse collapse" aria-labelledby="heading-right-5" data-bs-parent="#right-area">
+                            <div class="accordion-body">
+                                <!-- Conference Chair content goes here -->
+                                <li>Dr.B.Narendra Kumar Rao, HOD-CSE(AI&amp;ML), School of Computing, MBU.</li>
+          <li>Dr. G.Sunitha, Professor, CSE(AI&amp;ML), School of Computing, Mohan Babu University.</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-right-6">
+                            <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-right-6" aria-expanded="false" aria-controls="accordion-right-6">
+                                <h6>
+                                    Convener
+                                </h6>
+                            </button>
+                        </h2>
+                        <div id="accordion-right-6" class="accordion-collapse collapse" aria-labelledby="heading-right-6" data-bs-parent="#right-area">
+                            <div class="accordion-body">
+                                <!-- Convener content goes here -->
+                                <li>Dr. K. Reddy Madhavi, Professor, Department of CSE(AI&amp;ML), School of Computing, Mohan Babu University.</li>
+                                <li>Dr. J. Avanija, Professor, CSE(AI&amp;ML), School of Computing, Mohan Babu University.</li>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-right-7">
+                            <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-right-7" aria-expanded="false" aria-controls="accordion-right-7">
+                                <h6>
+                                    Co-Conveners
+                                </h6>
+                            </button>
+                        </h2>
+        
+                        <div id="accordion-right-7" class="accordion-collapse collapse" aria-labelledby="heading-right-7" data-bs-parent="#right-area">
+                            <div class="accordion-body">
+                                <!-- Co-Conveners content goes here -->
+                                 <li>Dr.I.Siva, Professer,ME,School of Engineering,Mohan Babu University</li>
+                                <li>Dr. A.V. Sriharsha, Professor, Dept. Of DS, School of Computing, Mohan Babu&nbsp;University.</li>
+                                <li>Dr.P.Subba Rao, BVC Engineering College(Autonomous),&nbsp;Odalarevu</li>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="heading-right-8">
+                          <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-right-8" aria-expanded="false" aria-controls="accordion-right-8">
+                              <h6>
+                                 Organizing Secretary
+                              </h6>
+                          </button>
+                      </h2>
+        
+                      <div id="accordion-right-8" class="accordion-collapse collapse" aria-labelledby="heading-right-7" data-bs-parent="#right-area">
+                          <div class="accordion-body">
+                              <!-- Co-Conveners content goes here -->
+                               <!-- <li>Dr.I.Siva, Professer,ME,School of Engineering,Mohan Babu University</li> -->
+                              <!--  <li>Dr.P.Dhana Lakshmi, Professor, CSE(AI&ML), School of Computing, Mohan Babu University.</li> -->
+                              <li>Ms.K.Ghamya, Assistant Professor, CSE(AI&amp;ML), School of Computing, Mohan Babu University.</li> 
+                          </div>
+                      </div>
+                      
+                  </div>
+                </div>
+                
+        
+                <div class="accordion-item ">
+                  <h2 class="accordion-header" id="heading-5">
+                      <button class="accordion-button shadow-none collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#accordion-5" aria-expanded="false" aria-controls="accordion-5">
+                          <h6>Technical Program Committee</h6>
+                      </button>
+                  </h2>
+                  <div id="accordion-5" class="accordion-collapse collapse " aria-labelledby="heading-5" data-bs-parent="#left-area">
+                      <div class="accordion-body ">
+                          <ul>
+                            <li>Dr. Rangaraj M. Rangayyan, Professor Emeritus of Electrical and Computer Engg., University of Calgary, Alberta, Canada</li>
+                            <li>Dr. Ajay K Katangur, Professor &amp; Head, Computer Science, Missouri State University</li>
+                            <li>Dr. Junfeng Que, Professor, Clayton State University, Atlanta, USA</li>
+                            <li>Dr. Anitesh Barua, Professor, UT, USA</li>
+                            <li>Dr. Mathini Sellathurai, Professor, Heriot-Watt University, UK</li>
+                            <li>Dr. Joao Manuel R. S. Tavares, Professor, University of Porto - Portugal</li>
+                            <li>Dr. Kun-lin Hsieh, NTU, Taiwan</li>
+                            <li>Dr. Ahamad J. Rusumdar, KIT, Germany</li>
+                            <li>Dr. V. R. Chirumamilla, EUT, Netherlands</li>
+                            <li>Dr. Halis Altun, MU, Turkey</li>
+                            <li>Dr. P.N. Suganthan, NTU, Singapore</li>
+                            <li>Dr. Mohammad Reza Daliri, Professor, Iran</li>
+                            <li>Dr. Boka Kumsa, Wollega University, Ethiopia</li>
+                            <li>Joy Iong-Zong Chen Ph.D, Da-Yeh University, Taiwan</li>
+                            <li>Dr. Alex Khang, Portfolio Manager of Emerging Technology Research Programs at GRITEx, (Industry Expert, AI and Data Science Author &amp; Editor), Ho Chi Minh City, Vietnam</li>
+                            <li>Vinayakumar Ravi, Ph.D. - Prince Mohammad Bin Fahd University, Khobar, Saudi Arabia</li>
+                            <li>Pinkovetskaia Iuliia, Ph.D. - Ulyanovsk State University, Russia</li>
+                            <li>Lebedev Anton, Ph.D. - N. P. Ogarev Mordovia State University, Russia</li>
+                            <li>Bolshakov Alexander, Ph.D. - Peter the Great St. Petersburg Polytechnic University, Russia</li>
+                            <li>Veshneva Irina, Ph.D. - Saratov State University, Russia</li>
+                            <li>Skorobogatchenko Dmitry, Ph.D. - Volgograd State Technical University, Russia</li>
+                            <li>Kizim Alexey, Ph.D. - Volgograd State Technical University, Russia</li>
+                            <li>Kravets Alla, Ph.D. - Volgograd State Technical University, Russia</li>
+                            <li>Joy Iong-Zong Chen Ph.D, Da-Yeh University, Taiwan</li>
+                            <li>Siddharth S, Ph.D. - University of Essex, UK</li>
+                            <li>Ashok. R. Patel, University of Massachusetts, USA</li>
+                            <li>Dr. M S Mekala, Yeungnam University, Gyeongsan, Korea</li>
+                            <li>Dr. Srinivas Nowduri, Professor of CSI, Pueblo, Colorado, United States of America</li>
+                            <li>Shiva Kaleru, Juniper Networks, USA</li>
+                            <li>Dr. M Madhusudhana Subramanyam, King Khalid University, Kingdom of Saudi Arabia</li>
+                            <li>Dr. Siva Ram Rajeyyagari, Dean, IT &amp; E-Learning, Shaqra University, Shaqra</li>
+                            <li>Dr. Tushar Kanti Bera, National Institute of Technology, Durgapur</li>
+                            <li>Dr. K. Chandrasekaran, NIT Karnataka, Surathkal</li>
+                            <li>Dr. Annappa, NIT Karnataka, Surathkal</li>
+                            <li>Dr. Devender Gurjat, NIT Silchar</li>
+                            <li>Dr. K. Jairam Naik, NIT Raipur</li>
+                            <li>Dr. G.C. Nandi, IIIT, Allahabad, Jhalwa, Uttar Pradesh</li>
+                            <li>Dr. J. Girija, Bangalore Institute of Technology, Bangalore</li>
+                            <li>Indra Riyanto, Ph.D. - Universitas Budi Luhur, Indonesia</li>
+                            <li>Dr. D. Ganesh Gopal, UIET, Chandigarh University, Mohali, Punjab</li>
+                            <li>Dr. B. Balamurugan, Galgotias University, Greater Noida, Uttar Pradesh</li>
+                            <li>Dr. Thirunavukkarasu K, Karnavati University, Uvarsad, Gandhinagar, Gujarat</li>
+                            <li>Dr. Deepak Garg, Bennett University, Greater Noida, Uttar Pradesh</li>
+                            <li>Dr. Valli Kumari. Professor, Andhra University, Vishakhapatnam</li>
+                            <li>Dr. S. Jyothi, SPMVV, Tirupati</li>
+                            <li>Dr. Voruganti Naresh Kumar, Professor, Department of CSE, CMR Technical Campus, Hyderabad, Telangana,&nbsp;India</li>
+                            <li>Dr. Brojo Kishore Mishra, GIET University, Gunupur, Odisha</li>
+                            <li>Dr. G S Pradeep Ghantasala, Chitkara University, Punjab, India</li>
+                            <li>Nazori AZ, Ph.D. - Universitas Budi Luhur, Indonesia</li>
+                            <li>Dr. S. Viswanadha Raju, JNTUHCEJ, Jagithyal, Karimnagar</li>
+                            <li>P. Thiyagarajan, Ph.D. - Central University of Tamil Nadu, Thiruvarur, Tamilnadu</li>
+                            <li>Dr. G. Madhavi, JNTU, Vizianagaram</li>
+                            <li>Manish Prateek, Ph.D. - Swami Rama Himalayan University, Dehradun</li>
+                            <li>Dr. Nagendra Panini Challa, VIT AP, Amaravati</li>
+                            <li>Dr. Beebi Naseeba, VIT AP, Amaravati</li>
+                            <li>Gopal Chaudhary, Ph.D. - Bharati Vidyapeeth College of Engineering, New Delhi</li>
+                            <li>Deepika Koundal, Ph.D. - University of Petroleum &amp; Energy Studies, Dehradun</li>
+                            <li>Neha Sharma, Ph.D. - Chandigarh University, Chandigarh</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              
+                    </div>                   
+                 </div></div></section>
         <!-- Property List End -->     
-
+        
         <!-- Testimonial Start -->
         <div class="container-xxl py-5" style="margin-top:-60px">
             <div class="container">

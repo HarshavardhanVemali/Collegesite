@@ -563,6 +563,9 @@ progress {
     color: #6c757d
 }
 
+.owl-carousel .owl-item img{
+    height: 500px;
+}
 .container,.container-fluid,.container-sm,.container-md,.container-lg,.container-xl,.container-xxl {
     width: 100%;
     padding-right: var(--bs-gutter-x, .75rem);
@@ -597,7 +600,7 @@ progress {
 
 @media (min-width: 1400px) {
     .container,.container-sm,.container-md,.container-lg,.container-xl,.container-xxl {
-        max-width:1320px
+        max-width: 100%;
     }
 }
 
@@ -4011,7 +4014,8 @@ textarea.form-control-lg {
     background-color: transparent;
     border: 1px solid transparent;
     border-radius: 5px;
-    transition: box-shadow 0.15s ease-in-out
+    transition: box-shadow 0.15s ease-in-out;
+    margin-right: 5px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -6755,7 +6759,7 @@ textarea.form-control-lg {
 }
 
 .border-info {
-    border-color: #0dcaf0 !important
+    border-color: #dc3545 !important
 }
 
 .border-warning {
@@ -7462,10 +7466,7 @@ textarea.form-control-lg {
     padding-left: 1rem !important
 }
 
-.px-4 {
-    padding-right: 1.5rem !important;
-    padding-left: 1.5rem !important
-}
+
 
 .px-5 {
     padding-right: 3rem !important;

@@ -12,5 +12,14 @@ def keytonespeakers(request):
 def registration(request):
     return render(request,'registration.html')
 
+def callforpapers(request):
+    return render(request,'callforpapers.html')
+
+def submitpaper(request):
+    return render(request,'submitpaper.html')
+
+def publication(request):
+    return render(request,'publication.html')
+
 def venue(request):
     return render(request,'venue.html')

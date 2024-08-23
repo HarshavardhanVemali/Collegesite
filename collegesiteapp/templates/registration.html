@@ -59,18 +59,11 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
 						<a href="{% url 'index' %}" class="nav-item nav-link">Home</a>
-                        <div class="nav-item dropdown">
-                            <a href="{% url 'aboutset' %}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
-                            <div class="dropdown-menu rounded-0 m-0">
-                                <a href="{% url 'aboutcollege' %}" class="dropdown-item">About MVGR</a>
-                                <a href="" class="dropdown-item">About SET</a>
-                                <a href="{% url 'aboutconference' %}" class="dropdown-item">About Conference</a>                                
-                            </div>
-                        </div>
                         <a href="{% url 'callforpapers' %}" class="nav-item nav-link">Call For Papers</a>
                         <a href="{% url 'submitpapers' %}" class="nav-item nav-link">Submit Paper</a>
                         <a href="{% url 'publication' %}" class="nav-item nav-link">Publication</a>
-                        <a href="{% url 'registration' %}" class="nav-item nav-link active">Registration</a>                        
+                        <a href="{% url 'registration' %}" class="nav-item nav-link active">Registration</a>
+                        <a href="{% url 'tracks' %}" class="nav-item nav-link">Tracks</a>                        
                         <a href="{% url 'keytonespeakers' %}" class="nav-item nav-link">Key Note Speakers</a>
                         <a href="{% url 'index' %}#imp-dates" class="nav-item nav-link">Important Dates</a> 
                         <a href="{% url 'index' %}#conf-team" class="nav-item nav-link">Conference Team</a> 
@@ -97,38 +90,114 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <td>1</td>
+                            <td>Students (UG/PG/PhD)*</td>
+                            <td>INR 8,000</td>
+                            <td>INR 9,500</td>
                         <tr>
-                            <td>1</td>
+                            <td>2</td>
                             <td>Authors (Indian Origin) - Upto 10 pages</td>
                             <td>INR 9,500</td>
                             <td>INR 11,500</td>
                         </tr>
                         <tr>
-                            <td>2</td>
+                            <td>3</td>
                             <td>Authors (Foreign Origin) - Upto 10 pages</td>
                             <td>USD 150</td>
                             <td>USD 200</td>
                         </tr>
                         <tr>
-                            <td>3</td>
+                            <td>4</td>
                             <td>Listeners</td>
                             <td>INR 1,000</td>
                             <td>INR 1,500</td>
                         </tr>
                         <tr>
-                            <td>4</td>
+                            <td>5</td>
                             <td>Extra Page (Indian Origin)</td>
                             <td>INR 1,000</td>
                             <td>INR 1,500</td>
                         </tr>
                         <tr>
-                            <td>5</td>
+                            <td>6</td>
                             <td>Extra Page (Foreign Origin)</td>
                             <td>USD 15</td>
                             <td>USD 10</td>
                         </tr>
                     </tbody>
                 </table>
+                <p style="text-align:justify"><span><strong>Note : </strong></span>The registration fee includes the publication charges, registration kits (for on-site participants only) and fooding charges (high tea, working lunch &amp; dinner during conference days to the on-site participants). Listeners and online participants are not entitled to a full conference kit.</p>
+                <p style="text-align:left"><strong>Submission Procedure</strong></p>
+                <p style="text-align:left">Submission should have at least 5 full pages but not more than 8 pages</p>
+            </div>
+            <div class="registration_form">
+                <h2 class="headings">Bank Details</h2>
+              </div>
+              <div class="registration_details">
+                <table>
+                    <tbody><tr>
+                        <th>Description</th>
+                        <th>Details </th>									
+                      </tr>
+                      <tr>
+                        <td>Bank Name</td>
+                        <td>ICIC BANK</td>									
+                      </tr>
+                      <tr>
+                        <td>Branch</td>
+                        <td>CBIT CAMPUS BRANCH</td> 
+                      </tr>
+                      <tr>
+                        <td>Address</td>
+                        <td>ICICI BANK LTD SY NO.351, CBIT CAMPUS, GANDIPET, KOKAPET VILLAGE  </td>
+                        
+                      </tr>
+                      <tr >
+                        <td>City  </td>
+                        <td>HYDERABAD, TELANGANA-500075  </td>									
+                      </tr>
+                      <tr>
+                        <td>Country</td>
+                        <td>INDIA</td>									
+                      </tr>
+                      <tr >
+                      <td>A/c Number</td>
+                      <td>180401001442</td>
+                      </tr>
+                       <tr>
+                      <td>A/C Name</td>
+                      <td>CBIT STUDENT ACTIVITIES</td>
+                      </tr>
+                       <tr >
+                      <td>Bank Branch Code</td>
+                      <td>004385</td>
+                      </tr>
+                       <tr>
+                      <td>Type of Account</td>
+                      <td>SAVINGS ACCOUNT</td>
+                      </tr>
+                       <tr>
+                      <td>IFSC Code</td>
+                      <td>ICIC0004385</td>
+                      </tr>
+                       <tr>
+                      <td>Swift Code</td>
+                      <td>ICICINBBNRI</td>
+                      </tr>
+                       <tr >
+                      <td>MICR Code</td>
+                      <td>500229104</td>
+                      </tr>
+                      <tr>
+                      <td>Ph No of Branch</td>
+                      <td>808503273</td>
+                      </tr>
+                      </tbody>
+                </table>
+                
+            </div>
+            <div id="qrimage">
+                <img src="{% static 'images/carousel-3.jpg' %}" alt="">
             </div>
         </div>
 

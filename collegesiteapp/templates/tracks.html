@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+
+<!-- Mirrored from icict.co.in/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 27 Jul 2024 04:40:34 GMT -->
+<head>
+    <meta charset="utf-8">
+    <title>MVGR(A)</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/college_logo.png' %}"> 
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="{% static '/cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css' %}" rel="stylesheet">
+    <link href="{% static '/cdn.jsdelivr.net/npm/bootstrap-icons%401.4.1/font/bootstrap-icons.css' %}" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/Customizedbootstrap.css' %}" />
+
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only"></span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar Start -->
+        <div class="container-fluid nav-bar bg-transparent" style="margin-top:-0px">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;">
+                <a href="{% url 'index' %}" class="navbar-brand d-flex align-items-center text-center">
+                    <div class="icon p-2 me-2">
+                        <img class="img-fluid" src="{% static 'images/logo.png' %}" alt="Icon" style="width: 250px; height: 73px;">
+                    </div>                    
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+						<a href="{% url 'index' %}" class="nav-item nav-link">Home</a>
+                        <a href="{% url 'callforpapers' %}" class="nav-item nav-link">Call For Papers</a>
+                        <a href="{% url 'submitpapers' %}" class="nav-item nav-link">Submit Paper</a>
+                        <a href="{% url 'publication' %}" class="nav-item nav-link">Publication</a>
+                        <a href="{% url 'registration' %}" class="nav-item nav-link">Registration</a>
+                        <a href="{% url 'tracks' %}" class="nav-item nav-link active">Tracks</a>                        
+                        <a href="{% url 'keytonespeakers' %}" class="nav-item nav-link">Key Note Speakers</a>
+                        <a href="{% url 'index' %}#imp-dates" class="nav-item nav-link">Important Dates</a> 
+                        <a href="{% url 'index' %}#conf-team" class="nav-item nav-link">Conference Team</a> 
+                        <a href="{% url 'venue' %}" class="nav-item nav-link">Venue</a>
+                    </div>                    
+                </div>                
+            </nav>            
+        </div>
+        <!-- Navbar End -->
+
+        <div class="tracks">
+            <h2 class="headings">Tracks</h2>
+            <div id="tab-1" class="tab-pane fade show p-0 active">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                        <div class="property-item rounded overflow-hidden">
+                        <p style="text-align: justify;color: #0E2E50;font-size:17px"><span class="style9"><strong>1. Artificial Intelligence and Machine Learning </strong></span><br>
+                           </p><ul class="links" style="list-style: none;">                                   
+                            <li>Deep Learning and Neural Networks</li> 
+                            <li>Natural Language Processing</li>
+                            <li>AI in Robotics and Automation</li>
+                            <li>AI for Healthcare</li>
+                            <li>Ethical AI and AI Governanc</li>
+                            </ul>                                   
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                        <div class="property-item rounded overflow-hidden">
+                            <p style="text-align: justify;color: #0E2E50;font-size:17px"><span class="style9"><strong>2. Data Science and Big Data Analytics</strong></span><br>
+                           </p><ul class="links" style="list-style: none;">                                   
+                            <li>Big Data Frameworks and Architectures</li> 
+                            <li>Data Mining and Knowledge Discovery </li>
+                            <li>Predictive Analytics </li>
+                            <li>Data Visualization </li>
+                            <li>Big Data in Industry Applications</li>
+                            </ul>    
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <div class="property-item rounded overflow-hidden">
+                            <p style="text-align: justify;color: #0E2E50;font-size:17px"><span class="style9"><strong>3. Cloud Computing and Virtualization</strong></span><br>
+                           </p><ul class="links" style="list-style: none;">                                   
+                            <li> Cloud Infrastructure and Services </li> 
+                            <li>Edge and Fog Computing  </li>
+                            <li>Serverless Computing  </li>
+                            <li>Cloud Security and Privacy  </li>
+                            <li>Cloud-based Applications and Innovations  </li>
+                            </ul>    
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <div class="property-item rounded overflow-hidden">
+                            <p style="text-align: justify;color: #0E2E50;font-size:17px"><span class="style9"><strong>4. Internet of Things (IoT)</strong></span><br>
+                           </p><ul class="links" style="list-style: none;">                                   
+                            <li>IoT Architecture and Protocols </li> 
+                            <li>Smart Cities and IoT Applications  </li>
+                            <li>IoT Security and Privacy </li>
+                            <li>Industrial IoT and Industry 4.0  </li>
+                            <li>Sensor Networks and Embedded Systems  </li>
+                            </ul>    
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <div class="property-item rounded overflow-hidden">
+                            <p style="text-align: justify;color: #0E2E50;font-size:17px"><span class="style9"><strong>5. Cybersecurity and Privacy</strong></span><br>
+                           </p><ul class="links" style="list-style: none;">                                   
+                            <li>Cryptography and Network Security  </li> 
+                            <li>Threat Detection and Prevention  </li>
+                            <li>Cyber-Physical Systems Security  </li>
+                            <li>Privacy-Preserving Computing </li>
+                            <li>Security in Blockchain and Distributed Systems  </li>
+                            </ul>    
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        <div class="property-item rounded overflow-hidden">                                    
+                            <p style="text-align: justify;color: #0E2E50;font-size:17px"><span class="style9"><strong>6. Blockchain and Distributed Ledger Technologies</strong></span><br>
+                           </p><ul class="links" style="list-style: none;">                                   
+                            <li>Deep Learning and Neural Networks</li> 
+                            <li>Natural Language Processing</li>
+                            <li>AI in Robotics and Automation</li>
+                            <li>AI for Healthcare</li>
+                            <li>Ethical AI and AI Governanc</li>
+                            </ul>                                    
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        <div class="property-item rounded overflow-hidden">
+                            <p style="text-align: justify;color: #0E2E50;font-size:17px"><span class="style9"><strong>7. Software Engineering and Applications</strong></span><br>
+                           </p><ul class="links" style="list-style: none;">                                   
+                            <li>Agile and DevOps Practices </li> 
+                            <li>Software Development Methodologies </li>
+                            <li>Software Quality Assurance and Testing </li>
+                            <li>Software Architecture and Design Patterns</li>
+                            <li>Mobile and Web Applications Development </li>
+                            </ul>    
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <div class="property-item rounded overflow-hidden">
+                            <p style="text-align: justify;color: #0E2E50;font-size:17px"><span class="style9"><strong>8. Human-Computer Interaction (HCI)</strong></span><br>
+                           </p><ul class="links" style="list-style: none;">                                   
+                            <li>User Interface Design and Usability </li> 
+                            <li>Augmented and Virtual Reality </li>
+                            <li>Interaction Techniques and Devices </li>
+                            <li>HCI for Assistive Technologies </li>
+                            <li>Cognitive and Affective Computing </li>
+                            </ul>    
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <div class="property-item rounded overflow-hidden">
+                            <p style="text-align: justify;color: #0E2E50;font-size:17px"><span class="style9"><strong>9. Networks and Communications</strong></span><br>
+                           </p><ul class="links" style="list-style: none;">                                   
+                            <li>5G and Beyond Networks </li> 
+                            <li>Wireless and Mobile Networks </li>
+                            <li>Network Security and Management </li>
+                            <li>Optical and Quantum Communications </li>
+                            <li>Ad hoc and Sensor Networks </li>
+                            </ul>    
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <div class="property-item rounded overflow-hidden">
+                            <p style="text-align: justify;color: #0E2E50;font-size:17px"><span class="style9"><strong>10. High-Performance Computing (HPC) </strong></span><br>
+                           </p><ul class="links" style="list-style: none;">                                   
+                            <li>Parallel and Distributed Computing </li> 
+                            <li>GPU and Accelerator Computing </li>
+                            <li>Performance Optimization and Tuning </li>
+                            <li>HPC Applications in Science and Engineering </li>
+                            <li>Exascale Computing </li>
+                            </ul>    
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <div class="property-item rounded overflow-hidden">
+                            <p style="text-align: justify;color: #0E2E50;font-size:17px"><span class="style9"><strong>11. Computer Vision and Image Processing</strong></span><br>
+                           </p><ul class="links" style="list-style: none;">                                   
+                            <li>Image and Video Analysis </li> 
+                            <li>Object Detection and Recognition </li>
+                            <li>Medical Image Processing </li>
+                            <li>Computational Photography </li>
+                            <li>Visual Information Retrieval </li>
+                            </ul>     
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <div class="property-item rounded overflow-hidden">
+                            <p style="text-align: justify;color: #0E2E50;font-size:17px"><span class="style9"><strong>12. Natural Language Processing (NLP) </strong></span><br>
+                           </p><ul class="links" style="list-style: none;">                                   
+                            <li>Machine Translation and Multilingual NLP </li> 
+                            <li>Text Mining and Sentiment Analysis  </li>
+                            <li>Speech Recognition and Synthesis  </li>
+                            <li>NLP in Healthcare and Legal Domains  </li>
+                            <li>NLP Tools and Applications  </li>
+                            </ul>    
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <div class="property-item rounded overflow-hidden">
+                            <p style="text-align: justify;color: #0E2E50;font-size:17px"><span class="style9"><strong>13. Applied Mathematics and Quantum Computing</strong></span><br>
+                           </p><ul class="links" style="list-style: none;">                                   
+                            <li>Quantum Algorithms and Protocols  </li> 
+                            <li>Quantum Cryptography  </li>
+                            <li>Quantum Machine Learning  </li>
+                            <li>Quantum Computing Applications </li>
+                            <li>Quantum Hardware and Software Development  </li>
+                            </ul>    
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <div class="property-item rounded overflow-hidden">
+                            <p style="text-align: justify;color: #0E2E50;font-size:17px"><span class="style9"><strong>14. Bioinformatics and Computational Biology</strong></span><br>
+                           </p><ul class="links" style="list-style: none;">                                   
+                            <li>Genomic Data Analysis</li> 
+                            <li>Protein Structure Prediction</li>
+                            <li>Computational Drug Discovery </li>
+                            <li>Systems Biology  </li>
+                            <li>Bioinformatics Tools and Databases </li>
+                            </ul>   
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <div class="property-item rounded overflow-hidden">
+                            <p style="text-align: justify;color: #0E2E50;font-size:17px"><span class="style9"><strong>15. Innovative Applications and Industry Solutions </strong></span><br>
+                           </p><ul class="links" style="list-style: none;">                                   
+                            <li>Technology in Education  </li> 
+                            <li>FinTech Innovations </li>
+                            <li>HealthTech and MedTech Solutions </li>
+                            <li>Smart Manufacturing and Industry 4.0  </li>
+                            <li>Green Computing and Sustainability  </li>
+                            </ul>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s" >
+            <div class="container py-5" style="margin-top:-60px">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Get In Touch</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>+91 9948107272</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+040-24193276</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>icict2024@cbit.ac.in</p>
+                        
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Quick Links</h5>
+                        <a class="btn btn-link text-white-50" href="#">Broucher</a>
+                        <a class="btn btn-link text-white-50" href="#">Online Registration</a>
+                        <a class="btn btn-link text-white-50" href="{% url 'venue'%}">Venue</a>
+                       
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Contact</h5>
+                        <ul class="links" style="list-style: none;">
+					     	<li style="font-weight:500">Department of CSE</li>
+                            <li style="font-weight:500">Department of CSICB</li>
+							<li style="font-weight:500">Department of CSM</li>
+							<li style="font-weight:500">Department of CSD</li>
+							<li style="font-weight:500">Department of CSIT</li>
+							</ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Venue</h5>
+                        <iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15172.982707323841!2d83.4055798!3d18.060178!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c634bbcd67ea3bf!2sMaharaj%20Vijayaram%20Gajapathi%20Raj%20College%20of%20Engineering%20(Autonomous)!5e0!3m2!1sen!2sin!4v1644992557857!5m2!1sen!2sin" width="300" height="220" allowfullscreen="allowfullscreen" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            <a class="border-bottom" href="#"></a>© 2024 | All Rights Reserved | Developed by : ICICT - 2024. 
+						</div>
+                        <div class="col-md-6 text-center text-md-end">                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="{% static '/code.jquery.com/jquery-3.4.1.min.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'js/main.js' %}"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>

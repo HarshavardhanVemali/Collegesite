@@ -10,6 +10,7 @@ urlpatterns = [
     path('aboutconference/',views.aboutconference,name='aboutconference'),
     path('keytonespeakers/',views.keytonespeakers,name='keytonespeakers'),
     path('registation/',views.registration,name='registration'),
+    path('tracks/',views.tracks,name='tracks'),
     path('callforpapers/',views.callforpapers,name='callforpapers'),
     path('submitpapers/',views.submitpaper,name='submitpapers'),
     path('publication/',views.publication,name='publication'),

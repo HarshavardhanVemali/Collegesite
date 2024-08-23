@@ -503,8 +503,41 @@ ul.links li {
 }
 .registration {
     padding: 20px;
+    width: 70%;
+    margin: 0 auto; 
 }
-
+#qrimage{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+#qrimage img{
+    
+    width: 500px;
+    height: 400px;
+}
+@media only screen and (max-width: 768px) {
+    .registration {
+        padding: 20px;
+        width: 100%;
+        margin: 0 auto; 
+    }
+    #qrimage img{
+    
+        width: 300px;
+        height: 300px;
+    }
+}
+.tracks{
+    margin-top: 20px;
+    padding: 10px;
+}
+.tracks>div>div>div{
+    transition: transform 0.3s ease-in-out;
+}
+.tracks>div>div>div:hover{
+    transform: scale(1.03);
+}
 .headings {
     text-align: center;
     color: red;
@@ -516,6 +549,7 @@ ul.links li {
     width: 100%;
     border-collapse: collapse;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
 }
 
 .registration_details th,
@@ -720,6 +754,10 @@ ul.links li {
         flex-direction: column;
         text-align: center;
       } 
+  }
+  .venue>div{
+    margin-top: 20px;
+    padding: 40px;
   }
   @media only screen and (min-width: 376px) and (max-width: 650px) {
     #map iframe{

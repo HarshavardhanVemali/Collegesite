@@ -15,6 +15,9 @@ def aboutconference(request):
 def aboutset(request):
     return render(request,'aboutset.html')
 
+def tracks(request):
+    return render(request,'tracks.html')
+
 def keytonespeakers(request):
     return render(request,'keytonespeakers.html')
 

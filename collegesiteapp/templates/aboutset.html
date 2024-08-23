@@ -59,18 +59,12 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
 						<a href="{% url 'index' %}" class="nav-item nav-link">Home</a>
-                        <div class="nav-item dropdown">
-                            <a href="" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">About</a>
-                            <div class="dropdown-menu rounded-0 m-0">
-                                <a href="{% url 'aboutcollege' %}" class="dropdown-item">About MVGR</a>
-                                <a href="{% url 'aboutset' %}" class="dropdown-item">About SET</a>
-                                <a href="{% url 'aboutconference' %}" class="dropdown-item">About Conference</a>                                
-                            </div>
-                        </div>
+                        
                         <a href="{% url 'callforpapers' %}" class="nav-item nav-link">Call For Papers</a>
                         <a href="{% url 'submitpapers' %}" class="nav-item nav-link">Submit Paper</a>
                         <a href="{% url 'publication' %}" class="nav-item nav-link">Publication</a>
-                        <a href="{% url 'registration' %}" class="nav-item nav-link">Registration</a>                        
+                        <a href="{% url 'registration' %}" class="nav-item nav-link">Registration</a>
+                        <a href="{% url 'tracks' %}" class="nav-item nav-link">Tracks</a>                        
                         <a href="{% url 'keytonespeakers' %}" class="nav-item nav-link">Key Note Speakers</a>
                         <a href="{% url 'index' %}#imp-dates" class="nav-item nav-link">Important Dates</a> 
                         <a href="{% url 'index' %}#conf-team" class="nav-item nav-link">Conference Team</a> 
